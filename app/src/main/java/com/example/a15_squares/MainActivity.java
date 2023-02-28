@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private boolean canMove(int clickedIndex, int emptyIndex) {
         //This method determines if object is allowed to move to spot
-        //this also returns only index's that are existent.
+        //this also returns only index's that are existent....
         int rowDiff = Math.abs(clickedIndex / 4 - emptyIndex / 4);
         int colDiff = Math.abs(clickedIndex % 4 - emptyIndex % 4);
         return (rowDiff == 1 && colDiff == 0) || (rowDiff == 0 && colDiff == 1);
